@@ -1,0 +1,21 @@
+body
+  font-family: 'Open Sans', sans-serif
+  color: $text-color
+  font-size: 1em
+
+a
+  color: $link-color
+  text-decoration: none
+  &:hover
+    color: darken($link-color, 30%)
+ul
+  list-style: none
+
+
+
+.col-left
+  @extend $left
+
+.col-right
+  float: right
+  position: relative

@@ -1,0 +1,23 @@
+.header-info
+  @extend $clearfix, $in
+  background-color  #f6f6f6
+  border-bottom: 1px solid #eeeeee
+  height: 50px
+  line-height: @height
+
+.currency_active
+  font-weight: 700
+
+.header-action
+  @extend $in, $clearfix
+  padding-top: 38px
+  padding-bottom: @padding-top
+  &>.header-logo
+    @extend $left
+    padding-right: 135px
+    & > a
+      font-size: 2em
+      font-weight: 700
+      color: #2e373f
+      & > .logo-accent
+        color: $link-color
