@@ -2,9 +2,10 @@ module.exports = function(grunt) {
 	grunt.initConfig({
     stylus: {
       compile: {
-        // options: {
-        //   paths: ['stylus']
-        // },
+        options: {
+          paths: ['stylus'],
+					compress: false
+        },
         files: {
           'css/style.css': 'stylus/style.styl'
         }

@@ -16,8 +16,45 @@
     @extend $left
     padding-right: 135px
     & > a
-      font-size: 2em
+      font-size: 2rem
       font-weight: 700
       color: #2e373f
       & > .logo-accent
         color: $link-color
+
+.dropdown
+  padding-right: 20px
+  & > ul
+    & > li
+      // @extend $left
+      display: inline-block
+      padding: 15px
+      & > a
+        &::after
+          display: inline-block
+          background: url('../img/arrow-down.png') no-repeat
+          width: 10px
+          height: 6px
+          margin-left: 8px
+          vertical-align: middle
+          content: ''
+
+      & > ul
+        display: none
+      &:hover
+        border: 1px solid gray
+        border-bottom: none
+        border-radius: 3px 3px 0 0
+
+        & > ul
+          display: block
+          position: absolute
+          background-color: #fff
+          white-space: nowrap
+          left: 0
+          z-index: 100
+          border: 1px solid gray
+          border-top: none
+          border-radius: 0 0 3px 3px
+          & > li
+            padding: 5px 15px
